@@ -28,3 +28,18 @@ Please use the following password to proceed to installation:
 JENKINS_HOST=username:password@localhost:8080
 curl -sSL "http://$JENKINS_HOST/pluginManager/api/xml?depth=1&xpath=/*/*/shortName|/*/*/version&wrapper=plugins" | perl -pe 's/.*?<shortName>([\w-]+).*?<version>([^<]+)()(<\/\w+>)+/\1 \2\n/g'|sed 's/ /:/'
 ```
+
+# List of plugins
+
+Run in Groovy console paste into `plugins.txt`.
+
+```
+Jenkins.instance.pluginManager.plugins.each{
+  plugin -> 
+    println ("${plugin.getShortName()}:latest")
+}
+```
+
+Also `${plugin.getVersion()` is available.
+
+https://stackoverflow.com/questions/9815273/how-to-get-a-list-of-installed-jenkins-plugins-with-name-and-version-pair
