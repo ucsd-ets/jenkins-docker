@@ -24,6 +24,7 @@ pipeline-model-extensions:latest
 pipeline-stage-tags-metadata:latest
 workflow-multibranch:latest
 aws-java-sdk:latest
+apache-httpcomponents-client-4-api:latest
 ssh-credentials:latest
 matrix-project:latest
 ssh-slaves:latest
@@ -32,6 +33,7 @@ workflow-support:latest
 branch-api:latest
 display-url-api:latest
 amazon-ecr:latest
+envinject-api:latest
 pam-auth:latest
 momentjs:latest
 bitbucket:latest
@@ -45,6 +47,7 @@ docker-workflow:latest
 external-monitor-job:latest
 git-client:latest
 git-server:latest
+jsch:latest
 javadoc:latest
 structs:latest
 pipeline-rest-api:latest
@@ -80,6 +83,7 @@ envinject:latest
 windows-slaves:latest
 credentials-binding:latest
 resource-disposer:latest
+command-launcher:latest
 credentials:latest
 workflow-cps:latest
 github-organization-folder:latest
